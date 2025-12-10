@@ -147,7 +147,9 @@
 
 - name: Set keycloak-server host
   ansible.builtin.set_fact:
-    kc_host: 'my-kc.{{ route_subdomain }}'
+    #kc_host: 'my-kc.{{ route_subdomain }}'
+    kc_host: 'my-kc.apps-crc.testing'
+
 
 - name: Get Keycloak admin token
   ansible.builtin.uri:
